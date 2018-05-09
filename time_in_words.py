@@ -2,8 +2,8 @@
 
 import sys
 
-
-    
+def generate_all_times():
+    return {str(h)+ ':' + str(m) if m > 9 else str(h)+ ':' + '0' + str(m) : to_time(h,m) for h in range(1,13) for m in range(0,60)  }
     
 def timeInWords(h, m):
     
